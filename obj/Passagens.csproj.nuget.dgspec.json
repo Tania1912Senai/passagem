@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1185849874\\Desktop\\Passagens\\Passagens.csproj": {}
+    "C:\\Users\\1185849874\\Desktop\\passagem\\Passagens.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1185849874\\Desktop\\Passagens\\Passagens.csproj": {
+    "C:\\Users\\1185849874\\Desktop\\passagem\\Passagens.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1185849874\\Desktop\\Passagens\\Passagens.csproj",
+        "projectUniqueName": "C:\\Users\\1185849874\\Desktop\\passagem\\Passagens.csproj",
         "projectName": "Passagens",
-        "projectPath": "C:\\Users\\1185849874\\Desktop\\Passagens\\Passagens.csproj",
+        "projectPath": "C:\\Users\\1185849874\\Desktop\\passagem\\Passagens.csproj",
         "packagesPath": "C:\\Users\\1185849874\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1185849874\\Desktop\\Passagens\\obj\\",
+        "outputPath": "C:\\Users\\1185849874\\Desktop\\passagem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\1185849874\\AppData\\Roaming\\NuGet\\NuGet.Config",

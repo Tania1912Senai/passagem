@@ -13,3 +13,11 @@ C:\Users\1185849874\Desktop\Passagens\obj\Debug\net7.0\refint\Passagens.dll
 C:\Users\1185849874\Desktop\Passagens\obj\Debug\net7.0\Passagens.pdb
 C:\Users\1185849874\Desktop\Passagens\obj\Debug\net7.0\Passagens.genruntimeconfig.cache
 C:\Users\1185849874\Desktop\Passagens\obj\Debug\net7.0\ref\Passagens.dll
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.csproj.AssemblyReference.cache
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.AssemblyInfoInputs.cache
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.AssemblyInfo.cs
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.csproj.CoreCompileInputs.cache
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.dll
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\refint\Passagens.dll
+C:\Users\1185849874\Desktop\passagem\obj\Debug\net7.0\Passagens.pdb

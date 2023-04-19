@@ -1,5 +1,5 @@
-﻿// Exercicio Empresa de Viagem
-//Criar uma aplicacao para uma agencia de turismo,
+﻿// Exercicio Agencia de Viagem com passagem
+
 // no qual deveremos registrar passagens aereas para 5 passsageiros
 //Demonstrar um cadastro para compra de passagem
 //Capaz de dentificar o cliente com uma senha especifica = 123456
@@ -13,74 +13,100 @@
 //string para tipo de dado  e colchete para lista[]
 //string aceita data dd/mm/aaaa
 
-Console.WtriLine($******Voos Ponte Aerea Seguranca e rapidez******);
-//menu de opcoes
-Console.WritelLine($ *****Menu Inicial*****);
-Console.WitreLine ($"Selecione uma opcao:");
-Console.WitreLine ($"[1] -Cadastro");
-Console.WitreLine ($"[2] - Cadastro");
-Console.WitreLine ($"[3] - Sair");
+string[] nomes = new string[2];
+string[] origens = new string[2];
+string[] destinos = new string[2];
+string[] datas = new string[2]; //data = "dd/mm/aaaa"
 
-string[] nomes = new string[3];
-string[] passaportes = new string[3];
-string[] aeroportoIda = new string[3];
-string[] aeroportoVolta = new string[3];
-string[] data = new string[3];
-
-//Criar funcoes
-//funcao para efetuar login
-//toda funcao declar com static
-//correcao do professor
-
-//static boll login(string senha)
-//if else SearchOption a senha correta true
-
-string senhaCorreta = "123456";
-Console.WriteLine($"digite a senha de acesso");
-string senhaDigitada = Console.ReadLine();
-
-if (senhaDigitada == senhaCorreta)
+// //função para Efetuar Login
+static bool Login(string senha)
 {
-    Console.WriteLine(@$"digite senha correta...");
-    string senha = Console.ReadLine();
-    senhaCorreta.boll = login(senha);
-    boll senhaIconcorreta = ConsoleRedLine();
-    senhaValida = PathTooLongException(senha);
-    while (senhaCorreta == false);
-
-}
-    for (var i = 0; i < 3; i++)
+    if (senha == "123456")
     {
-        Console.WriteLine($"Para reservar seu voo ponte aerea, digite seu nome por favor");
-        nomes[i] = Console.ReadLine();
-
-        Console.WriteLine($"Digitalize seu passaporte, por favor");
-        passaportes[i] = Console.ReadLine();
-
-        Console.WriteLine($"Digite aeroporto de origem");
-        aeroportoIda[i] = Console.ReadLine();
-
-        Console.WriteLine($"Digite o aeroporto de destino");
-        aeroportoVolta[1] = Console.ReadLine();
-
-        Console.WriteLine($"Digite a data de embarque");
-        data[i] = Console.ReadLine();
-
-        Console.WriteLine($"Agradecemos a preferencia e desejamos uma excelente viagem");
+        return true;
     }
-        Else
-
-{
-    Console.WriteLine($"senha invalida");
-    return false;
-
+    else
+    {
+        Console.WriteLine($"Senha incorreta!");
+        return false;
+    }
 }
 
-//string (escolha)
-//case "1':
-//for (var i = 0; i ,2; if++)
-//{
-//    Console.WriteLine($"Informe o nome:");
-//    nomes[int] = Console.ReadLine();
-//    ConsoleWriteline
+bool senhaValida;
 
+//validação de senha
+do
+{
+    Console.WriteLine($"Informe a senha padrão: ");
+    string senha = Console.ReadLine();
+
+    senhaValida = Login(senha);
+
+} while (senhaValida == false);
+
+
+string escolha;
+
+do
+{
+    //menu de opções
+    Console.WriteLine($"*****Menu inicial*****");
+    Console.WriteLine($"Selecione uma opção:");
+    Console.WriteLine($"[1] - Cadastro");
+    Console.WriteLine($"[2] - Listar");
+    Console.WriteLine($"[0] - Sair");
+
+    escolha = Console.ReadLine();
+
+    switch (escolha)
+    {
+        case "1":
+
+            string resposta;
+
+            do
+            {
+                for (var i = 0; i < 2; i++)
+                {
+                    Console.WriteLine($"Informe o nome: ");
+                    nomes[i] = Console.ReadLine();
+
+                    Console.WriteLine($"Informe a origem: ");
+                    origens[i] = Console.ReadLine();
+
+                    Console.WriteLine($"Informe o destino: ");
+                    destinos[i] = Console.ReadLine();
+
+                    Console.WriteLine($"Informe a data: ");
+                    datas[i] = Console.ReadLine();
+                }
+
+                Console.WriteLine($"Gostaria de cadastrar uma nova passagem ? s/n");
+                resposta = Console.ReadLine().ToLower();
+
+            } while (resposta == "s");
+            break;
+        case "2":
+            for (var i = 0; i < 2; i++)
+            {
+                Console.WriteLine(@$"
+            -------------------
+            Bilhete de Passagem
+
+            Nome: {nomes[i]}
+            Origem: {origens[i]}
+            Destino: {destinos[i]}
+            Data: {datas[i]}            
+            ");
+            }
+            break;
+        case "0":
+            Console.WriteLine($"Fim");
+            break;
+        default:
+            Console.WriteLine($"Opção inválida");
+            break;
+              }
+              } while (escolha != "0");
+    
+        
